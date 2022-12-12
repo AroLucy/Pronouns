@@ -55,7 +55,7 @@ body {
     backdrop-filter: blur(1em);
     -webkit-backdrop-filter: blur(1em);
 }
-#DescriptorsList {
+#DescriptorsList, #PronounsList {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
