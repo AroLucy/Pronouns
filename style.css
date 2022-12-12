@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Manrope:wght@300&display=swap');
+body {
+    background-image: url(./background.jpg);
+    background-position: 50% 50%;
+    background-origin: inherit;
+    background-size: cover;
+}
+* {
+    color: #f77;
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    background-attachment: fixed;
+}
+#ProfileInfo {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    background-color: #fff3;
+    border-radius: 1em;
+    backdrop-filter: blur(1em);
+    -webkit-backdrop-filter: blur(1em);
+    width: 50vw;
+}
+#ProfileWrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ProfilePic {
+    border-radius: 100%;
+    height: 8em;
+    width: 8em;
+    border: 0.5em white solid
+}
+#InfoBlocks {
+    display: flex;
+    width: 30em;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    text-align: center;
+}
+.InfoBlock {
+    width: 13em;
+    text-align: center;
+    height: 11em;
+    background-color: #fff3;
+    margin: 1em 1em;
+    border-radius: 1em;
+    backdrop-filter: blur(1em);
+    -webkit-backdrop-filter: blur(1em);
+}
+#DescriptorsList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 7em;
+    text-align: center;
+}
+h1 {
+    font-family: 'La Belle Aurore', cursive;
+}
+ul {
+    list-style: none;
+}
+
+@media (max-width:30em) {
+    #ProfileWrapper {
+        height: auto;
+    }
+    #ProfileInfo {
+        width: 13em;
+    }
+    .InfoBlock {
+        width: 13em;
+    }
+    #InfoBlocks {
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+}
