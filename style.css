@@ -62,11 +62,27 @@ body {
     height: 7em;
     text-align: center;
 }
-h1 {
+h1,h2 {
     font-family: 'La Belle Aurore', cursive;
 }
 ul {
     list-style: none;
+}
+li > img {
+    height: 1em;
+    border-radius: 100%;
+}
+#NamesFlags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li > img:not(#trans) {
+    margin-left: 1em;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (max-width:30em) {
